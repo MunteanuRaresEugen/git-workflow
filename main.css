@@ -1,10 +1,9 @@
 .title {
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .name {
-    margin-top: 30px;
-    font-size: initial;
+    margin-top: 0px;
 }
 
 .mail {
@@ -16,7 +15,12 @@
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid rgb(199, 196, 196);
-    border-radius: 7px;
+    border-radius: 6px;
+}
+
+.inputname::content {
+    position: relative;
+    box-shadow: 0 0 10px rgba(245, 240, 240, 0.3);
 }
 
 .inputmail {
@@ -24,34 +28,109 @@
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid rgb(199, 196, 196);
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 .checkbox1{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
+
 .part1 {
     margin-top: 10px;
     margin-bottom: 100px;
+    margin-right: 50px;
     padding: 8px;
+    box-sizing: 50px; 
     border: 1px solid rgb(199, 196, 196);
+    border-radius: 6px;
+}
+
+.part2
+{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 8px;
+    box-sizing:content-box; 
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 6px;
 }
 .one {
     margin-top: 10px ;
 }
 
 .button{
-    color: #6C63FF;
     margin-top: 20px;
     border: 15px solid #008060;
     border-radius: 7px;
     background: #008060;
     color: white;
+    
 }
 
 .button:hover {
-    
     color: white;
+    background: #008060;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+.Needhelpbutton{
+    color : #008060;
+    background: white;
+    font-size: initial;
+    border: 0px solid white;
+}
+
+.image {
+    position: fixed;
+    left: 105px;
+    top: 0px;
+    margin-left: 150px;
+    width: 12%;
+}
+
+#nb1 {
+    position:static;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    
+}
+
+#nb2 {
+    position:static;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+label {
+    position:relative;
+}
+
+label::before {
+    content: "";
+    background: url("./images/Yes_Check_Circle.svg.png");
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -25px;
+    top: 7px;
+
+    transform: scale(0) ;
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before {
+    transform: scale(1) ;
+}
+
 
 
