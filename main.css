@@ -4,7 +4,7 @@
 
 .name {
     margin-top: 30px;
-    font-size:initial;
+    font-size: initial;
 }
 
 .mail {
@@ -16,6 +16,7 @@
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid rgb(199, 196, 196);
+    border-radius: 7px;
 }
 
 .inputmail {
@@ -23,8 +24,12 @@
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid rgb(199, 196, 196);
+    border-radius: 7px;
 }
 
+.checkbox1{
+    margin-bottom: 10px;
+}
 .part1 {
     margin-top: 10px;
     margin-bottom: 100px;
@@ -33,15 +38,14 @@
 }
 .one {
     margin-top: 10px ;
-    
 }
 
 .button{
     color: #6C63FF;
     margin-top: 20px;
-    border: 15px solid rgb(24, 156, 24);
-    border-radius: 15px;
-    background: rgb(24, 156, 24);
+    border: 15px solid #008060;
+    border-radius: 7px;
+    background: #008060;
     color: white;
 }
 
